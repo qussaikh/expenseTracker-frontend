@@ -1,0 +1,66 @@
+.background-custom {
+    background-color: #fffbea;
+  }
+  
+
+.backgroundImage {
+    background: url('../images/banner1.webp');
+}
+.home {
+    height: auto;
+    background-color: #fffbea;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+    
+}
+
+.home .home-information {
+    position: relative; /* Ändra till 'relative' för att positionera relativt till normalt flöde */
+    
+}
+
+.home .home-information .home-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #5e5e5e;
+}
+
+.home .home-information .home-info {
+    font-size: 35px;
+    color: #40666b
+    ;
+    margin-bottom: 20px;
+}
+
+.home .home-information .home-desc {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #888;
+    margin-bottom: 20px
+}
+
+.home .home-information .home-desc span {
+    color: #000
+}
+
+.home .home-information .home-btn {
+    background: #40666b;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.home .home-information .home-btn:hover {
+    background: #fff;
+    color: #eb5424
+}
+
+
+  
