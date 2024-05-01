@@ -33,8 +33,6 @@ function App() {
           <Routes >
             {/* http://localhost:8080/home */}
             <Route path='/home' element={<HomeComponent />}></Route>
-            {/* http://localhost:8080 */}
-            <Route path='/' element={<LoginComponent />}></Route>
             {/* http://localhost:8080/invoices */}
             <Route path='/invoices' element={
               <AuthenticatedRoute>
@@ -64,9 +62,7 @@ function App() {
 
             {/* http://localhost:8080/login */}
             <Route path='/login' element={<LoginComponent />}></Route>
-
           </Routes>
-      
         <FooterComponent />
       </BrowserRouter>
     </>

@@ -26,7 +26,7 @@ const LoginComponent = () => {
             storeToken(token);
 
             saveLoggedInUser(username, role);
-            navigator("/invoices")
+            navigator("/home")
 
             window.location.reload(false);
         }).catch(error => {

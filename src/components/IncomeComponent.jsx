@@ -2,14 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { getUserIncome } from '../services/IncomeService';
 
 
+
 const IncomeComponent = () => {
     const [income, setIncome] = useState([]);
-
+   
 
     useEffect(() => {
         getUserIncome()
             .then(response => {
                 setIncome(response.data);
+               
             })
             .catch(error => {
                 console.error('Error fetching income data:', error);

@@ -3,6 +3,7 @@ import './style.css';
 import { getUserIncome, saveIncomeAPI } from '../services/IncomeService'
 
 import { isAdminUser, isUserRoll } from '../services/AuthService'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -14,6 +15,7 @@ const IncomeProcessingComponent = () => {
 
     const [income, setIncome] = useState('');
     const [message, setMessage] = useState('');
+    const navigator = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -26,6 +28,7 @@ const IncomeProcessingComponent = () => {
             if (response.status === 201) {
                 setMessage('Income saved successfully!');
                 setIncome('');
+                navigator("/invoices")
             } else {
                 setMessage('Failed to save income.');
             }
